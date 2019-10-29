@@ -3,7 +3,7 @@ export default function renderImage(images) {
             <div class="image-container">
             <img src="${images.url}" alt="${images.title} image">
                 <h3>${images.title}</h3>
-                <p>Num of Horns:${images.horns}</p>
+                <p>Number of Horns:${images.horns}</p>
             </div>
     `;
     return html;
