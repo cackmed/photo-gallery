@@ -11,9 +11,9 @@ test('testing that renderImage function that renders html', function(assert) {
         horns: 1 };
     
     const expected = `<div class="image-container">
-    <img src="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg" alt="UniWhal image">
+    <img src="${images.url}" alt="${images.title} image">
     <h3>UniWhal</h3>
-    <p>Num of Horns:1</p>
+    <p>Num of Horns:${images.horns}</p>
     </div>`; 
     //Assert
     // Make assertions about what is expected valid result
