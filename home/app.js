@@ -55,8 +55,8 @@ function render(fullyRenderImages) {
     while (dev.lastElementChild) {
         dev.lastElementChild.remove();
     }
-    fullyRenderImages.forEach(images => {
-        const html = renderImages(images);
+    fullyRenderImages.forEach(image => {
+        const html = renderImages(image);
         const dom = htmlToDOM(html);
         dev.appendChild(dom);
     });
